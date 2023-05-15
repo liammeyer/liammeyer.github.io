@@ -28,22 +28,21 @@
 
 		nav li {
 			display: inline;
-			position: relative; /* Add relative positioning */
-			padding-right: 20px; /* Adjust spacing between the link and the bar */
+			position: relative;
 		}
 
 		nav li::after {
 			content: "";
-			position: absolute; /* Position the vertical bar */
-			top: 0;
+			position: absolute;
+			top: 50%; /* Adjust the position to center vertically */
 			right: 0;
-            left: 0;
-			height: 100%;
-			border-right: 1px solid #000000; /* Add vertical bar */
+			transform: translateY(-50%); /* Center vertically using translation */
+			height: 80%; /* Adjust the height of the vertical bar */
+			border-right: 1px solid #000000;
 		}
 
 		nav li:last-child::after {
-			display: none; /* Hide the bar on the last link */
+			display: none;
 		}
 
 		nav a {
