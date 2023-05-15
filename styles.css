@@ -1,21 +1,10 @@
 header {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
+	justify-content: flex-end;
 }
 
-nav ul {
+.header-container {
 	display: flex;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav li:last-child {
-	margin-right: 0;
+	align-items: center;
+	gap: 20px;
 }
