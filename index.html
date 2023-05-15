@@ -14,8 +14,8 @@
 		}
 
 		h1 {
-			margin: 100px 0; /* Add margin to the top and bottom */
-			padding: 20px;
+			margin: 0px 0;
+			padding: 30px;
 		}
 
 		nav ul {
@@ -28,6 +28,22 @@
 
 		nav li {
 			display: inline;
+			position: relative; /* Add relative positioning */
+			padding-right: 20px; /* Adjust spacing between the link and the bar */
+		}
+
+		nav li::after {
+			content: "";
+			position: absolute; /* Position the vertical bar */
+			top: 0;
+			right: 0;
+            left: 0;
+			height: 100%;
+			border-right: 1px solid #000000; /* Add vertical bar */
+		}
+
+		nav li:last-child::after {
+			display: none; /* Hide the bar on the last link */
 		}
 
 		nav a {
