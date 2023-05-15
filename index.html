@@ -28,25 +28,20 @@
 
 		nav li {
 			display: inline;
-			position: relative;
 		}
 
-		nav li::after {
+		nav li:not(:last-child)::after {
 			content: "";
-			position: absolute;
-			top: 50%; /* Adjust the position to center vertically */
-			right: 0;
-			transform: translateY(-50%); /* Center vertically using translation */
-			height: 80%; /* Adjust the height of the vertical bar */
-			border-right: 1px solid #000000;
-		}
-
-		nav li:last-child::after {
-			display: none;
+			display: inline-block;
+			width: 1px;
+			height: 0.7em; /* Adjust the height of the vertical bar */
+			vertical-align: middle;
+			margin: 0 10px; /* Adjust the spacing between the words and vertical bars */
+			background-color: #000000;
 		}
 
 		nav a {
-			display: block;
+			display: inline-block;
 			padding: 10px;
 			text-decoration: none;
 			color: black;
