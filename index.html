@@ -1,69 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Single Page Application</title>
+	<title>Main Page</title>
 	<style>
 		body {
 			margin: 0;
 			padding: 0;
 		}
-
-		header {
-			background-color: #89817d;
-			text-align: center;
-		}
-
-		h1 {
-            font-size: 70px; /* Adjust the value as per your desired size */
-			margin: 0px 0;
-			padding: 30px;
-		}
-
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: space-evenly;
-		}
-
-		nav li {
-			display: inline;
-		}
-
-		nav li:not(:last-child)::after {
-			content: "";
-			display: inline-block;
-			width: 1px;
-			height: 1.5em; /* Adjust the height of the vertical bar */
-			vertical-align: middle;
-			margin: 0 80px; /* Adjust the spacing between the words and vertical bars */
-			background-color: #000000;
-		}
-
-		nav a {
-			display: inline-block;
-			padding: 10px;
-			text-decoration: underline;
-			color: black; 
-		}
 	</style>
 </head>
 <body>
-	<header>
-		<h1>Liam Meyer</h1>
-		<nav>
-			<ul>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="college.html">College</a></li>
-				<li><a href="personal.html">Personal</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	<iframe src="header.html" frameborder="0" width="100%" height="100"></iframe>
 	<main>
-		<!-- The contents of each section have been moved to separate HTML files -->
+		<!-- The contents of the main page -->
 	</main>
 </body>
 </html>
